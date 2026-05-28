@@ -1,16 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Receitas </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEA Companion</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header> Receitas </header>
+  <div class="container">
+    <header>
+      <h1>TEA Companion</h1>
+      <div class="profile">
+        <img src="https://via.placeholder.com/80" alt="Lucas">
+        <h2>Lucas • 9 anos</h2>
+      </div>
+    </header>
 
-    <h1>TORTA DE LIMÃO SUPER FÁCIL!!! TUDO MEXIDO A MÃO 😃😋 | RECEITAS DA CRIS</h1>
-    <p>#TortadeLimão</p>
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/cc8QuY7seFQ?si=aq5-hANPgfi2n-8F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="dashboard">
+      <div class="card">
+        <h3>Nível de Ansiedade</h3>
+        <p class="status medium">Médio (3/5)</p>
+      </div>
+      <div class="card">
+        <h3>Sono</h3>
+        <p>8h 20min <span class="good">✓ Bom</span></p>
+      </div>
+      <div class="card">
+        <h3>Foco do Dia</h3>
+        <p class="good">Bom</p>
+      </div>
+    </div>
+
+    <section>
+      <h2>Sensores em Tempo Real</h2>
+      <div class="sensors">
+        <div>Som: <span class="normal">Normal</span></div>
+        <div>Movimento: <span class="normal">Calmo</span></div>
+        <div>Batimentos: <span>92 bpm</span></div>
+      </div>
+    </section>
+
+    <section class="suggestion">
+      <h2>Recomendação da IA</h2>
+      <p><strong>Exercício de respiração guiada (4 minutos)</strong></p>
+      <button onclick="startActivity()">Iniciar Atividade</button>
+    </section>
+
+    <nav>
+      <button onclick="showSection('monitor')">Monitoramento</button>
+      <button onclick="showSection('report')">Relatórios</button>
+      <button onclick="showSection('suggestions')">Sugestões</button>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
